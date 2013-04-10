@@ -82,7 +82,7 @@ cd $REPO_BRANCH
 
 rm -rf .repo/manifests*
 rm -rf .repo/local_manifests/
-repo init -u $SYNC_PROTO://github.com/CyanogenMod/android.git -b $REPO_BRANCH
+repo init -u git://192.168.0.181/cm/CyanogenMod/android.git -b $REPO_BRANCH
 check_result "repo init failed."
 
 mkdir -p .repo/local_manifests
